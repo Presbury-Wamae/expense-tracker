@@ -13,6 +13,10 @@ function App() {
   const handleSearchChange = (term) => {
     setSearchTerm(term);
   };
+  const handleDeleteExpense = (indexToDelete) => {
+    const updatedExpenses = expenses.filter((_, index) => index !== indexToDelete);
+    setExpenses(updatedExpenses);
+  };
   const filteredExpenses = expenses.filter((expense) =>
     expense.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
     expense.category.toLowerCase().includes(searchTerm.toLowerCase())
@@ -23,7 +27,7 @@ function App() {
       <h1>Expense Tracker</h1>
       <ExpenseForm onAddExpense={handleAddExpense} />
       <SearchBar searchTerm={searchTerm} onSearchChange={handleSearchChange}/>
-      <ExpenseTable expenses={filteredExpenses} />
+      <ExpenseTable expenses={filteredExpenses} onDelete={handleDeleteExpense} />
     </div>
   );
 }
