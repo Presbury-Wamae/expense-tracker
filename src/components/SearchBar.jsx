@@ -3,7 +3,9 @@ function SearchBar({ searchTerm, onSearchChange }) {
       <div>
         <input type="text" 
         placeholder="Search expenses..." 
-         value={searchTerm}/>
+        value={searchTerm}
+        onChange={(e) => onSearchChange(e.target.value)}
+        />
       </div>
     );
   }

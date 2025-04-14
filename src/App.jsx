@@ -10,13 +10,20 @@ function App() {
   const handleAddExpense = (newExpense) => {
     setExpenses([...expenses, newExpense]);
   };
+  const handleSearchChange = (term) => {
+    setSearchTerm(term);
+  };
+  const filteredExpenses = expenses.filter((expense) =>
+    expense.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    expense.category.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="App">
       <h1>Expense Tracker</h1>
       <ExpenseForm onAddExpense={handleAddExpense} />
-      <SearchBar />
-      <ExpenseTable expenses={expenses} />
+      <SearchBar searchTerm={searchTerm} onSearchChange={handleSearchChange}/>
+      <ExpenseTable expenses={filteredExpenses} />
     </div>
   );
 }
