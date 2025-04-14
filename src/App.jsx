@@ -6,11 +6,15 @@ import ExpenseTable from "./components/ExpenseTable";
 function App() {
   const [expenses, setExpenses] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  
+  const handleAddExpense = (newExpense) => {
+    setExpenses([...expenses, newExpense]);
+  };
 
   return (
     <div className="App">
       <h1>Expense Tracker</h1>
-      <ExpenseForm />
+      <ExpenseForm onAddExpense={handleAddExpense} />
       <SearchBar />
       <ExpenseTable expenses={expenses} />
     </div>
