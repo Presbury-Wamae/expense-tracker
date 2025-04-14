@@ -16,7 +16,7 @@ function ExpenseTable({ expenses }) {
           <ExpenseRow 
           key={index} 
           expense={expense} 
-          onDelete={() => onDelete(index)}
+          
           />
         ))}
       </tbody>

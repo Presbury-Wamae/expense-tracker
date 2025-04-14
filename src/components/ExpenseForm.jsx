@@ -12,8 +12,8 @@ function ExpenseForm({ onAddExpense }) {
             amount: parseFloat(amount),
             category
           };
-      
-          onAddExpense(newExpense); // send new expense to App
+          // send new expense to App
+          onAddExpense(newExpense); 
       
           // Reset form fields
           setDescription("");

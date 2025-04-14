@@ -13,10 +13,7 @@ function App() {
   const handleSearchChange = (term) => {
     setSearchTerm(term);
   };
-  const handleDeleteExpense = (indexToDelete) => {
-    const updatedExpenses = expenses.filter((_, index) => index !== indexToDelete);
-    setExpenses(updatedExpenses);
-  };
+
   const filteredExpenses = expenses.filter((expense) =>
     expense.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
     expense.category.toLowerCase().includes(searchTerm.toLowerCase())
