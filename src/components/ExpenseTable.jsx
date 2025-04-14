@@ -13,11 +13,7 @@ function ExpenseTable({ expenses }) {
       </thead>
       <tbody>
         {expenses.map((expense, index) => (
-          <ExpenseRow 
-          key={index} 
-          expense={expense} 
-          
-          />
+          <ExpenseRow key={index} expense={expense} />
         ))}
       </tbody>
     </table>

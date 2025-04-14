@@ -24,7 +24,7 @@ function App() {
       <h1>Expense Tracker</h1>
       <ExpenseForm onAddExpense={handleAddExpense} />
       <SearchBar searchTerm={searchTerm} onSearchChange={handleSearchChange}/>
-      <ExpenseTable expenses={filteredExpenses} onDelete={handleDeleteExpense} />
+      <ExpenseTable expenses={filteredExpenses} />
     </div>
   );
 }
