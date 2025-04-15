@@ -1,12 +1,61 @@
-# React + Vite
+#  Expense Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive React app for tracking your daily expenses. Add, view, filter, and delete expenses with a clean UI.
 
-Currently, two official plugins are available:
+##  Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Add new expenses with description, amount, and category  
+✅ View all expenses in a styled table  
+✅ Search and filter expenses by keyword  
+✅ Delete specific expenses from the list  
+✅ Responsive and clean UI
 
-## Expanding the ESLint configuration
+##  Built With
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (via Vite or CRA)
+- JSX and React Hooks
+- CSS for styling
+- JavaScript for logic and event handling
+
+##  Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- npm (comes with Node)
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/expense-tracker.git
+
+# Navigate into the project
+cd expense-tracker
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev  # If using Vite
+# OR
+npm start    # If using Create React App
+
+expense-tracker/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ExpenseForm.jsx
+│   │   ├── ExpenseRow.jsx
+│   │   ├── ExpenseTable.jsx
+│   │   └── SearchBar.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── README.md
+└── package.json
+ Live Demo
+You can view the deployed app here:
+ Live Demo on Vercel
