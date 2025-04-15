@@ -4,11 +4,11 @@ A simple and interactive React app for tracking your daily expenses. Add, view, 
 
 ##  Features
 
-✅ Add new expenses with description, amount, and category  
-✅ View all expenses in a styled table  
-✅ Search and filter expenses by keyword  
-✅ Delete specific expenses from the list  
-✅ Responsive and clean UI
+1. Add new expenses with description, amount, and category  
+2. View all expenses in a styled table  
+3. Search and filter expenses by keyword  
+4. Delete specific expenses from the list  
+5. Responsive and clean UI
 
 ##  Built With
 
